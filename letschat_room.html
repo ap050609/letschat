@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<title>Let's Chat</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="letschat.css">
+
+</head>
+<body style="background-color: aqua;" >
+<div class="container">
+	<a href="#" class="btn btn-info btn-lg" onclick="logout()">
+		<span  style="font-family: 'Sansita Swashed', cursive;"></span> Log out
+	  </a>
+	<center>
+		<h1 class="header">	
+			Let's Chat
+			
+		</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3 class="color_white" style="font-family: 'Permanent Marker', cursive;" id="username"></h3>
+		<div class="form-group input_div_room_page">
+			<label style="font-family: 'Permanent Marker', cursive;">Add Room:</label>
+
+		</div>
+		<input type="text" id="room_name" class="form-control" placeholder="Room Name">
+		<button class="btn btn-success" style="font-family: 'Permanent Marker', cursive;" onclick="addRoom()">Add Room</button>
+
+		<h3 class="color_white" style="font-family: 'Sansita Swashed', cursive;">Important Rooms</h3>
+		<div id="output" style="font-family: 'Permanent Marker', cursive;"></div>
+	
+	</center>
+</div>
+<script src="letschat_room.js"></script>
+</body>
+</html>
